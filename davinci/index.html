@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WireFrame 3D Vizualizer</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="title">
+      <h3>Graficación</h3>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1">Visualización</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#" id="eyeDown">Viewpoint Down</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="eyeUp">Viewpoint Up</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="eyeLeft">Viewpoint to Left</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="eyeRight">Viewpoint to Right</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="incrDist">Increase viewing distance</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="decrDist">Decrease viewing distance</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2">Mover piezas</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+          <!--<li><a class="dropdown-item" href="#" id="pza1Izq">Pza 1 a la izq </a></li>
+          <li><a class="dropdown-item" href="#" id="pza1Der">Pza 1 a la der</a></li>-->
+          <li><a class="dropdown-item" href="#" id="Patita">Animacion hacia arriba</a></li>
+          <li><a class="dropdown-item" href="#" id="pza12Izq">Animacion hacia abajo </a></li>
+          <li><a class="dropdown-item" href="#" id="pza12Der">Detener Animacion</a></li>
+          <li><a class="dropdown-item" href="#" id="startRotation">rotar todo</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <div class="canvas-container">
+      <div class="featured-section">
+        <div class="featured-title">Canvas</div>
+        <canvas canvas="canvas" id="circlechart" width="1000px" height="400px"></canvas>
+      </div>
+      <div class="help">
+          <div class="help-item">
+            <a class="help-link" id="navbarDropdownMenuLink3">About</a>
+          </div>
+          <div class="help-item">
+            <a class="help-link" href="#">Development Team</a>
+          </div>
+          <div class="help-item">
+            <a class="help-link" href="#">Version</a>
+          </div>
+          <div class="help-item">
+            <a class="help-link" href="#">Contact</a>
+          </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <input type="file" id="file-input" />
+    <h3>Contenido del archivo:</h3>
+    <pre id="contenido-archivo"></pre>
+  </footer>
+
+  <script src="./dist/src/index.js" type="module"></script>
+</body>
+
+</html>
+
